@@ -1,0 +1,15 @@
+<ng-container *ngFor="let user of userList | SearchFilter:SearchTerm;let i=index;">
+    <div fxFlex="column" class="width-100 box-lr-border padding-1 border-bottom" [ngClass]="{'border-top':i==0}">
+        <div fxLayout="row" class="width-100">
+            <div fxFlex=75 fxLayout="column" fxLayoutAlign="center start">
+                <span>{{user.name}}</span>
+            </div>
+
+            <div fxFlex=25 fxLayout="column" fxLayoutAlign="center center">
+                <p class="rounded-button" [ngClass]="user.isActive?'active':'offline'">
+                    {{user.isActive?'Active':'Offline'}}</p>
+            </div>
+        </div>
+    </div>
+
+</ng-container>

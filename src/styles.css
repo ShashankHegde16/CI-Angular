@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+.width-100{
+    width:100% !important;
+}
+
+.padding-1{
+    padding: 1em;
+}
+
+.child-layout{
+    display: flex;
+    flex-direction: column;
+}
+
+.margin-btm{
+    margin-bottom: 1em;
+}
+
+.box-lr-border{
+    border-right:1px solid lightgray;
+    border-left:1px solid lightgray;
+}
+
+.border-top{
+    border-top:1px solid lightgray;
+
+}
+.border-bottom{
+    border-bottom: 1px solid lightgray;
+}
+
+.rounded-button{
+    border: 1px solid white;
+    width: 5em;
+    text-align: center;
+    border-radius: 8px;
+    color:white;
+}
+
+.active{
+    background: green;
+
+}
+.offline{
+    background: orange;
+}
+
